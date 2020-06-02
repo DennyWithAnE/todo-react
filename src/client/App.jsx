@@ -24,7 +24,7 @@ class App extends React.Component {
     } else {
       var inputList = this.state.toDoList;
       inputList.push(this.state.list);
-      this.setState({ list: "" });
+      this.setState({ list: "", inputError: "" });
     }
   }
   render() {
